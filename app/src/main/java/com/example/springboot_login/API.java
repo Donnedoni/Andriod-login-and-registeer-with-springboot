@@ -5,7 +5,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
-// the services / API interface
+// the services / API interface Two routes
 public interface API {
 
     @POST("register")

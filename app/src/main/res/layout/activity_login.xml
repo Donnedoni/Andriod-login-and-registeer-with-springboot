@@ -39,7 +39,7 @@
 
 <!--    a input field for username -->
     <EditText
-        android:id="@+id/etRUserName"
+        android:id="@+id/etLUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -54,7 +54,7 @@
 
 <!--    a input field for password -->
     <EditText
-        android:id="@+id/etRPassword"
+        android:id="@+id/etLPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etRUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/etLUserName" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -91,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etRPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etLPassword" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
