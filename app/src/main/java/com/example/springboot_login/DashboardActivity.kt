@@ -3,6 +3,7 @@ package com.example.springboot_login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 
@@ -15,8 +16,12 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
       // intent= Intent(this, LoginActivity::class.java)
      welcomeText ="Welcome "+ getIntent().getStringExtra("Username").toString() + "!";
-      tvWelcome = this.findViewById(R.id.tvWelcome);
+        tvWelcome = this.findViewById(R.id.tvWelcome);
         tvWelcome.setText(welcomeText);
+
+        this.findViewById<Button>(R.id.MovieButton).setOnClickListener {
+            startActivity(Intent(this, MovieSelection1::class.java))
+        }
 
     }
 }

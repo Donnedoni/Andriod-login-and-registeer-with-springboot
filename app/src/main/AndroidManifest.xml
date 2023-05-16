@@ -8,13 +8,19 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-
+        android:icon="@drawable/splashy"
         android:label="@string/app_name"
-
         android:supportsRtl="true"
+        android:roundIcon="@drawable/splashy"
         android:theme="@style/Theme.Springboot_login"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".MovieSelection2"
+            android:exported="true" />
+        <activity
+            android:name=".MovieSelection1"
+            android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
@@ -23,9 +29,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".DashboardActivity"
             android:exported="true" />
@@ -43,9 +47,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
